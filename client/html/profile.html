@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/task-manager_style.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <script src="../scripts/profile.js" defer></script>
+    <title>Task-manager - Profile</title>
+</head>
+<body>
+    <div class="confirmation-popUp">
+        <h2 class="confirmation-text"></h2>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Edit Your Profile</div>
+            <button id="closeModal" class="close-btn">&times;</button>
+        </div>
+        <form class="modal-form">
+            <input type="text" placeholder="Name" class="input" name="name" id="updatedName">
+            <input type="text" placeholder="Age" class="input" name="age" id="updatedAge">
+            <input type="email" placeholder="Email" class="input" name="email" id="updatedEmail">
+            <input type="password" placeholder="New Password" class="input" name="password" id="updatedPassword">
+            <button class="btn" id="updateUserInfo">Save Changes!</button>
+        </form>
+    </div>
+
+        <h1 id="profile-header"></h1>
+
+        <div class="profile-viewer">
+            <div class="profile-Info-Section">
+                <!-- <div class="profile-content-divider"> -->
+                    <div class="card-position">
+                        <div class="profile-card">
+                            <div class="userMenuBar">
+                                <div class="menu-section1">
+                                    <!-- <span> -->
+                                        <img src="../images/door-open-solid.svg" class="logoutIcon" title="Logout" alt="logout">
+                                    <!-- </span> -->
+                                </div>
+                                <div class="menu-section2">
+                                    <!-- <span> -->
+                                        <img src="../images/user-edit-solid.svg" id="editProfile" class="editProfileIcon" title="Edit Profile" alt="editProfile">
+                                    <!-- </span> -->
+                                </div>
+                            </div>
+                            <div class="profile-card--space">
+                                <div class="user-info-container">
+                                    <img src="../images/user-icon-solid.svg" alt="" class="profile-pic">
+                                    <div class="user-info">
+                                        <span id="userName"></span>
+                                        <!-- <span id="userAge">19 years old</span> -->
+                                        <span id="userEmail"></span>
+                                    </div>                                                
+                                </div>
+                                <h2 class="welcomeText"></h2>
+                                <div class="activity-feed">
+                                    <p class="activity-header">Your Latest Activities:</p>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>                
+                <!-- </div> -->
+                <div class="border-container">
+                    <hr class="content-border">
+                </div>
+                <div class="task-container">
+                    <div class="task-container-wrapper">
+                        <div class="task-container-header">
+                            <div class="searchFormBgd">
+                                <form class="searchForm">
+                                    <label for="searchTask">
+                                        Search Task:
+                                        <input type="text" placeholder="Search..." id="searchTask" class="taskSearch input">                    
+                                    </label>
+                                    <img src="../images/plus-solid.svg" class="plusIcon" alt="plus">
+                                </form>
+                                <form class="create-task-field">
+                                    <input class="input" name="title" placeholder="Task title"></input>
+                                    <input class="input" name="description" placeholder="Task description"></input>
+                                    <button class="btn" id="createTask">Create task</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="taskField">
+                        
+                        <!-- <div class="overflowBox"> -->
+
+                            <div class="task-body">
+
+                                <!-- <div class="task">
+                                    <div class="taskInfo-container">
+                                        <div class="checkbox-container">
+                                            <label class="switch" for="taskCheckbox">
+                                                <input id="taskCheckbox" type="checkbox">
+                                                <span class="slider"></span>
+                                            </label>
+                                        </div>
+                                        <div class="taskText-container">
+                                            <h4 class="taskTitle">Handla på affären</h4>
+                                            <span class="taskDescription">Köp 2 mjölk, 10-pack ägg, bananer, toarullar, chips, godis, köttfärs, korv, smoothie, ost, smör, potatis</span>
+                                        </div>
+                                    </div>
+                                    <div class="task-OptBar">
+                                        <img src="../images/trash-alt-solid.svg" class="trashIcon" title="Delete this task">
+                                    </div>
+                                </div>
+
+                                <div class="task">
+                                    <span>Task description</span>
+                                </div>
+
+                                <div class="task">
+                                    <span>Task description</span>
+                                </div>
+                                <div class="task">
+                                    <span>Task description</span>
+                                </div>
+                                <div class="task">
+                                    <span>Task description</span>
+                                </div>
+                                <div class="task">
+                                    <span>Task description</span>
+                                </div>
+                                <div class="task">
+                                    <span>Task description</span>
+                                </div>
+                                <div class="task">
+                                    <span>Task description</span>
+                                </div>
+                                <div class="task">
+                                    <span>Task description</span>
+                                </div>
+                                <div class="task">
+                                    <span>Task description</span>
+                                </div>
+                                <div class="task">
+                                    <span>Task description</span>
+                                </div> -->
+
+                            </div>
+
+                            <!-- <hr class="taskHR"> -->
+
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div></div> -->
+        </div>
+    <div id="overlay"></div>
+</body>
+</html>
